@@ -6,15 +6,15 @@ import pages.*
 
 import static cucumber.api.groovy.EN.*
 
-Given(~/I am on the Geb home page/) { ->
-	to GebHomePage
+Given(~/I am on the Intel home page/) { ->
+	to IntelHomePage
 }
 
-Then(~/the first heading on the page is '(.*)'/) { String expectedHeading ->
-	assert page.headings[0].text() == expectedHeading
-}
+/*Then(~/the first heading on the page is '(.*)'/) { String expectedHeading { ->
+	assert page.headings[0].text().contains("Intel")
+}*/
 
-When(~/the link to documentation is clicked/) { ->
+When(~/I click the Sign In Link/) { ->
 	page.documentationLink.click()
 }
 

@@ -10,7 +10,8 @@ import org.openqa.selenium.firefox.FirefoxDriver
 
 // Use firefox as the default
 // See: http://code.google.com/p/selenium/wiki/FirefoxDriver
-driver = { new FirefoxDriver() }
+driver = { new ChromeDriver() }
+// new FirefoxDriver()
 
 environments {
 
@@ -22,7 +23,7 @@ environments {
 
 }
 
-baseUrl = "http://gebish.org"
+baseUrl = "http://www.intel.in"
 
 baseNavigatorWaiting = true
 atCheckWaiting = true
